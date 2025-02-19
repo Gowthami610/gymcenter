@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FITNESS GYM</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>  
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            color: white;
+            text-align: center;
+            background: #111;
+            font-size: 22px;
+        }
+        header {
+            background: url('C:/Users/DELL/OneDrive/Pictures/background.jpg') no-repeat center center/cover;
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-end;
+            text-transform: uppercase;
+            font-size: 30px;
+            position: relative;
+            padding-right: 10%;
+            width: 100%;
+        }
+        nav {
+            position: fixed;
+            top: 0;
+            width: 100vw; /* Full width extension */
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px 0;
+            z-index: 1000;
+            font-size: 24px;
+        }
+        nav ul {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+        }
+        nav ul li {
+            margin: 0 20px;
+        }
+        nav ul li a {
+            color: pink;
+            text-decoration: none;
+            font-size: 24px;
+            padding: 12px;
+            transition: 0.3s;
+        }
+        nav ul li a:hover {
+            background: burlywood;
+            border-radius: 5px;
+        }
+        .hero-content {
+            text-align: right;
+            padding-right: 5%;
+        }
+        .hero-content h1 {
+            font-size: 70px;
+            font-weight: bold;
+            margin: 0;
+            color: aquamarine;
+        }
+        .hero-content p {
+            font-size: 28px;
+        }
+        section {
+            padding: 120px 220px;
+            background: #222;
+            color: white;
+            min-height: 80vh;
+            font-size: 24px;
+        }
+        section h2 {
+            color: pink;
+            font-size: 36px;
+        }
+        .gallery {
+            display: flex;
+            justify-content: center;
+            padding: 100px;
+        }
+        .gallery img {
+            width: 350px; /* Reduced size */
+            height: 250px;
+            object-fit: cover;
+            border-radius: 10px;
+        }
+        .about-content ul {
+            text-align: left;
+            margin-left: 30%;
+        }
+        .contact-info p {
+            color: white;
+            font-size: 24px;
+        }
+        #plans ul li strong, 
+        #services ul li strong, 
+        #about strong, 
+        #contact strong {
+            color: violet;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">About Us</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#plans">Membership Plans</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+        <div class="hero-content">
+            <h1>FITNESS GYM</h1>
+            <p>Take Care Of Your Body</p>
+        </div>
+    </header>
+
+    <section id="home">
+        <h2>Welcome to FITNESS GYM</h2>
+        <p>FITNESS GYM is dedicated to helping you achieve your fitness goals with state-of-the-art equipment, expert trainers, and a motivating community.</p>
+        <div class="gallery">
+            <img src="C:/Users/DELL/Downloads/gym1.jpg" alt="Gym Equipment">
+        </div>
+    </section>
+
+    <section id="about">
+        <h2>About Us</h2>
+        <img src="C:/Users/DELL/Downloads/gym3.jpg" alt="Training Session">
+        <img src="C:/Users/DELL/Downloads/images.jpg" alt="equipments">
+        <div class="about-content">
+            <p><strong>Facilities Available:</strong></p>
+            <ul>
+                <li>Fully equipped weightlifting area</li>
+                <li>Modern cardio machines</li>
+                <li>Yoga and aerobics studios</li>
+                <li>Personal training and nutrition guidance</li>
+            </ul>
+            <p><strong>Our Trainers:</strong></p>
+            <p>Our team of certified trainers is dedicated to helping you achieve your fitness goals through personalized workout plans, nutrition guidance, and continuous support.</p>
+        </div>
+    </section>
+
+    <section id="services">
+        <h2>Services</h2>
+        <div style="display: flex; align-items: center; justify-content: space-around;">
+            <ul>
+                <li><strong>Strength Training:</strong> Build muscle and increase strength with our professional-grade equipment and structured programs.</li>
+                <li><strong>Cardio Programs:</strong> Improve your endurance and heart health with our variety of cardio exercises and equipment.</li>
+                <li><strong>Yoga & Meditation:</strong> Enhance flexibility, reduce stress, and improve mindfulness with expert-led sessions.</li>
+                <li><strong>Personal Training:</strong> Get one-on-one coaching from certified trainers to meet your specific fitness goals.</li>
+            </ul>
+            <img src="C:/Users/DELL/OneDrive/Pictures/ser.jpeg" alt="Our Services" style="width: 500px; height: auto; border-radius: 10px;">
+        </div>
+    </section>
+
+    <section id="plans">
+        <h2>Membership Plans</h2>
+        <ul>
+            <li><strong>Basic Plan - 700/- per month:</strong> Access to cardio and weightlifting areas, locker facilities, and general workout sessions.</li>
+            <li><strong>Premium Plan - 1400/- per month:</strong> Includes all basic plan features plus access to group fitness classes, yoga sessions, and a personal trainer consultation.</li>
+            <li><strong>VIP Plan - 2000/- per month:</strong> All premium benefits plus unlimited personal training, nutrition planning, sauna access, and priority booking for classes.</li>
+        </ul>
+    </section>
+
+    <section id="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-info">
+        <p><strong style="color: violet;">Location:</strong> 123 Fitness Street, Gym City</p>
+        <p><strong style="color: violet;">Email:</strong> info@shapegym.com</p>
+        <p><strong style="color: violet;">Phone:</strong> 0909090909, 3699633693</p>
+    </div>
+</section></body>
+</html>
